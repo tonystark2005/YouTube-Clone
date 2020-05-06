@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/YouTube-Clone/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/YouTube-Clone/static/js/main.18af0a26.chunk.js",
-    "main.js.map": "/YouTube-Clone/static/js/main.18af0a26.chunk.js.map",
+    "main.js": "/YouTube-Clone/static/js/main.148caaae.chunk.js",
+    "main.js.map": "/YouTube-Clone/static/js/main.148caaae.chunk.js.map",
     "runtime-main.js": "/YouTube-Clone/static/js/runtime-main.f0edd6b9.js",
     "runtime-main.js.map": "/YouTube-Clone/static/js/runtime-main.f0edd6b9.js.map",
     "static/js/2.a9a46fe4.chunk.js": "/YouTube-Clone/static/js/2.a9a46fe4.chunk.js",
     "static/js/2.a9a46fe4.chunk.js.map": "/YouTube-Clone/static/js/2.a9a46fe4.chunk.js.map",
     "index.html": "/YouTube-Clone/index.html",
-    "precache-manifest.d9d05782467200b23131b4bfcbd5f705.js": "/YouTube-Clone/precache-manifest.d9d05782467200b23131b4bfcbd5f705.js",
+    "precache-manifest.a93dc2ca6fed2cd95456e97ecf9289b1.js": "/YouTube-Clone/precache-manifest.a93dc2ca6fed2cd95456e97ecf9289b1.js",
     "service-worker.js": "/YouTube-Clone/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/YouTube-Clone/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.a9a46fe4.chunk.js.LICENSE.txt": "/YouTube-Clone/static/js/2.a9a46fe4.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f0edd6b9.js",
     "static/js/2.a9a46fe4.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.18af0a26.chunk.js"
+    "static/js/main.148caaae.chunk.js"
   ]
 }
