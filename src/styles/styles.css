@@ -1,0 +1,46 @@
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; 
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+.video-item {
+  display: flex;
+  cursor: pointer;
+  align-items: right;
+  margin: 5px;
+  
+}
+
+.video-item img {
+  margin-right: 5px;
+  display: inline;
+  float: left;
+}
+
+.ui-grid {
+  justify-content: center;
+}
+
+.grid-item {
+  justify-content: center;
+  margin: 10px;
+}
+
+.chip-wrapper {
+  display: inline-block;
+  margin: 5px;
+}
+
+.searchbar {
+  padding: 25px;
+}
+
+.loading {
+  text-align: center;
+}
