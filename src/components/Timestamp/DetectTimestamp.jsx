@@ -6,19 +6,22 @@ import convertToSeconds from "./convertToSeconds.js";
 export default ({ video, player }) => {
   try {
     var sections = [];
-    var str = video.snippet.description;
-    var matchArr = str.match(/.*([\d{1,}]?:?\d{1,2}:\d{2}).*/gi);
+    var description = video.snippet.description;
+    var matchArr = description.match(/.*([\d{1,}]?:?\d{1,2}:\d{2}).*/gi);
     if (matchArr.length === 0) return;
-    var i;
+    //var i;
 
-
-    for (i = 0; i < matchArr.length; i++) {
+    matchArr.forEach((section) => {
       sections = [...sections, {
-        title: matchArr[i].match(/[a-zA-Z ]+/gi),
-        time: matchArr[i].match(/(\d{1,}]?:?\d{0,2}:\d{2})/gim)
+        title: section.match(/[a-zA-Z ]+/gi),
+        time: section.match(/(\d{1,}]?:?\d{0,2}:\d{2})/gim)
       }];
-    }
-  } catch (error) { }
+      
+    })
+
+  } catch (error) {
+    console.log(error);
+   }
 
   const onClickHandle = (player, time) => {
     player.current.seekTo(convertToSeconds(time));
