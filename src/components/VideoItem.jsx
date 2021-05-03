@@ -1,22 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Typography, Container } from "@material-ui/core";
+import { VideoContext } from "./HomePage";
 
-export default ({ video, onVideoSelect, handleDescription }) => {
+
+export default ({ video }) => {
+  const {setSelectedVideo, handleDescription}= useContext(VideoContext)
   return (
     <React.Fragment>
       <Container
-        style={{ display: "flex", alignItems: "right", cursor: "pointer" }}
         onClick={() => {
-          onVideoSelect(video);
+          setSelectedVideo(video);
           handleDescription(video);
         }}
+        className="video-item"
       >
         <img
-          style={{ marginRight: "3px" }}
           alt="thumbnail"
           src={video.snippet.thumbnails.medium.url}
         />
-        <Typography variant="subtitle2">
+        <Typography variant="subtitle2" >
           <b>{video.snippet.title}</b>
         </Typography>
       </Container>
