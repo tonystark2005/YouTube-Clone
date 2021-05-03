@@ -13,13 +13,14 @@ export default ({ onSubmit }) => {
   };
 
   return (
-    <Paper elevation={6} style={{ padding: "25px" }}>
+    <Paper className="searchbar">
       <TextField
         fullWidth
         label="Search..."
         value={searchTerm}
         onChange={handleChange}
         onKeyPress={onKeyPress}
+        autoFocus
       />
     </Paper>
   );
