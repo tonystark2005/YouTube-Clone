@@ -6,8 +6,6 @@ import VideoItem from "./VideoItem";
 export default ({ videos, onVideoSelect, handleDescription }) => {
   const listOfVideos = videos.map(video => (
     <VideoItem
-      onVideoSelect={onVideoSelect}
-      handleDescription={handleDescription}
       key={video.id.videoId}
       video={video}
     />
