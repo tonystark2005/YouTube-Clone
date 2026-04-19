@@ -6,7 +6,7 @@ import VideoList from "./VideoList";
 import youtube from "./api/youtube";
 
 export const VideoContext = createContext();
-export default () => {
+const HomePage = () => {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
   return (
@@ -60,3 +60,5 @@ export default () => {
     setSelectedVideo(newVideo[0]);
   }
 };
+
+export default HomePage;

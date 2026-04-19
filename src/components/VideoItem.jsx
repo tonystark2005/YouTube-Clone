@@ -3,7 +3,7 @@ import { Typography, Container } from "@mui/material";
 import { VideoContext } from "./HomePage";
 
 
-export default ({ video }) => {
+const VideoItem = ({ video }) => {
   const {setSelectedVideo, handleDescription}= useContext(VideoContext)
   return (
     <React.Fragment>
@@ -25,3 +25,5 @@ export default ({ video }) => {
     </React.Fragment>
   );
 };
+
+export default VideoItem;

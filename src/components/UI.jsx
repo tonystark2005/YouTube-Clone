@@ -31,7 +31,7 @@ const Section = ({ section, index, removeSection }) => {
   );
 };
 
-export default () => {
+const UI = () => {
   // Declare a new state variable, which we'll call "count"
   const [time, setTime] = useState("");
   const [title, setTitle] = useState("");
@@ -141,3 +141,5 @@ export default () => {
     </Container>
   );
 };
+
+export default UI;

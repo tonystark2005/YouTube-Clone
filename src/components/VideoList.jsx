@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 
 import VideoItem from "./VideoItem";
 
-export default ({ videos }) => {
+const VideoList = ({ videos }) => {
   const listOfVideos = videos.map(video => (
     <VideoItem
       key={video.id.videoId}
@@ -17,3 +17,5 @@ export default ({ videos }) => {
     </Grid>
   );
 };
+
+export default VideoList;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Paper, TextField } from "@mui/material";
 
-export default ({ onSubmit }) => {
+const SearchBar = ({ onSubmit }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleChange = event => setSearchTerm(event.target.value);
@@ -25,3 +25,5 @@ export default ({ onSubmit }) => {
     </Paper>
   );
 };
+
+export default SearchBar;

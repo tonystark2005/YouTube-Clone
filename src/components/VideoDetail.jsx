@@ -4,7 +4,7 @@ import { Paper, Typography, Box } from "@mui/material";
 import AutoDetect from "./Timestamp/DetectTimestamp";
 import ReactPlayer from "react-player";
 
-export default ({ video }) => {
+const VideoDetail = ({ video }) => {
   if (!video) {
     return (
       <Box className="loading">
@@ -52,3 +52,5 @@ export default ({ video }) => {
     </React.Fragment>
   );
 };
+
+export default VideoDetail;

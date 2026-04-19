@@ -3,7 +3,7 @@ import { Chip, Box } from "@mui/material";
 import convertToSeconds from "./convertToSeconds.js";
 
 
-export default ({ video, player }) => {
+const DetectTimestamp = ({ video, player }) => {
   try {
     var sections = [];
     var description = video.snippet.description;
@@ -52,3 +52,5 @@ export default ({ video, player }) => {
     </Box>
   );
 };
+
+export default DetectTimestamp;
