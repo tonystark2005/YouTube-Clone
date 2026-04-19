@@ -3,6 +3,23 @@
 
 https://tonystark2005.github.io/YouTube-Clone
 
+## Playwright
+
+End-to-end tests are set up with Playwright.
+
+Install dependencies and browser binaries:
+
+```bash
+npm install
+npx playwright install
+```
+
+Run the test suite:
+
+```bash
+npm run test:e2e
+```
+
 
 
 
