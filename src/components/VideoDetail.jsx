@@ -17,7 +17,8 @@ export default ({ video }) => {
       </Box>
     );
   }
-  const videoSrc = `https://www.youtube.com/embed/${video.id}?enablejsapi=1`;
+  const videoId = typeof video.id === "string" ? video.id : video.id?.videoId;
+  const videoSrc = `https://www.youtube.com/watch?v=${videoId}`;
   const player = useRef(null);
 
   return (
@@ -28,7 +29,7 @@ export default ({ video }) => {
             width="100%"
             height="100%"
             ref={player}
-            url={videoSrc}
+            src={videoSrc}
             controls={true}
             playing={true}
             // autoPlay={true}

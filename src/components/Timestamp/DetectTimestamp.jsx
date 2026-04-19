@@ -24,19 +24,28 @@ export default ({ video, player }) => {
    }
 
   const onClickHandle = (player, time) => {
-    player.current.seekTo(convertToSeconds(time));
+    const nextTime = convertToSeconds(time);
+    const playerInstance = player.current;
+
+    if (!playerInstance) return;
+
+    if (typeof playerInstance.seekTo === "function") {
+      playerInstance.seekTo(nextTime);
+      return;
+    }
+
+    playerInstance.currentTime = nextTime;
   };
   
   return (
     <Box>
       {sections.map((section, index) => (
-        <div className="chip-wrapper">
+        <div className="chip-wrapper" key={index}>
           <Chip
             label={section.title}
             onClick={() => onClickHandle(player, section.time)}
             display="flex"
             color="primary"
-            key={index}
           ></Chip>
         </div>
       ))}
