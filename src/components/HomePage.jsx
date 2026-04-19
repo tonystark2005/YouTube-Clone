@@ -13,14 +13,14 @@ export default () => {
     <React.Fragment>
       <Box>
         <Grid container spacing={5} className="ui-grid">
-          <Grid item xs={12} sm={12} md={12} className="grid-item" >
+          <Grid size={12} className="grid-item">
             <SearchBar onSubmit={handleSubmit} />
           </Grid>
           <VideoContext.Provider value={{videos, setSelectedVideo, handleDescription}}>
-            <Grid item xs={12} sm={8} md={8}>
+            <Grid size={{ xs: 12, sm: 8, md: 8 }}>
               <VideoDetail video={selectedVideo}  />
             </Grid>
-            <Grid item xs={12} sm={4} md={4}>
+            <Grid size={{ xs: 12, sm: 4, md: 4 }}>
               <VideoList
                 videos={videos}
                 onVideoSelect={setSelectedVideo}
