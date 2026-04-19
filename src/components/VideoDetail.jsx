@@ -5,7 +5,18 @@ import AutoDetect from "./Timestamp/DetectTimestamp";
 import ReactPlayer from "react-player";
 
 export default ({ video }) => {
-  if (!video) return <Typography variant="h3" className="loading">Loading...</Typography>;
+  if (!video) {
+    return (
+      <Box className="loading">
+        <Typography variant="h4" gutterBottom>
+          Search for a video to get started
+        </Typography>
+        <Typography variant="subtitle1" color="textSecondary">
+          Pick something you want to watch and the player will show up here.
+        </Typography>
+      </Box>
+    );
+  }
   const videoSrc = `https://www.youtube.com/embed/${video.id}?enablejsapi=1`;
   const player = useRef(null);
 
