@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import { Paper, Typography, Box } from "@material-ui/core";
+import { Paper, Typography, Box } from "@mui/material";
 import AutoDetect from "./Timestamp/DetectTimestamp";
 import ReactPlayer from "react-player";
 

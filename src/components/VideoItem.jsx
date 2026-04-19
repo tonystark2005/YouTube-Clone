@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import { Typography, Container } from "@material-ui/core";
+import { Typography, Container } from "@mui/material";
 import { VideoContext } from "./HomePage";
 
 

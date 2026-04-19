@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Paper, TextField } from "@material-ui/core";
+import { Paper, TextField } from "@mui/material";
 
 export default ({ onSubmit }) => {
   const [searchTerm, setSearchTerm] = useState("");

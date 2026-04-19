@@ -1,5 +1,5 @@
 import React from "react";
-import { Chip, Box } from "@material-ui/core";
+import { Chip, Box } from "@mui/material";
 import convertToSeconds from "./convertToSeconds.js";
 
 
